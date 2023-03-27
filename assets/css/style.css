@@ -1,0 +1,102 @@
+:root {
+    --foggy: #97ABBD;
+    --lightgray: #A7A69D;
+}
+
+* {
+    background-color: var(--foggy);
+}
+
+body {
+
+}
+
+header {
+    
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightblue;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+}
+
+nav ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: 20px auto
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: violet;
+}
+
+footer ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    list-style: none;
+    max-width: 500px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul a:hover {
+    color: violet;
+}
+
+.project-list {
+    border: 2px solid green;
+    align-items: center;
+    text-align: center;
+}
+.project-list div {
+    border: 2px solid red;
+    display: flex;
+}
+
+.project-img {
+    max-width: 400px;
+    display:
+}
+
+.developer-info {
+    border: 2px solid black;
+}
+
+#profile-photo {
+    max-width: 400px;
+}
