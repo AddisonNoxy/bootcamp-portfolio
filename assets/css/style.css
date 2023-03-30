@@ -7,12 +7,13 @@
     background-color: var(--foggy);
 }
 
-body {
-
+main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-header {
-    
+main section {
+
 }
 
 h1 {
@@ -28,6 +29,7 @@ h2 {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    text-align: center;
 }
 
 p {
@@ -67,6 +69,9 @@ footer ul {
     justify-content: space-between;
     text-decoration: none;
     color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 footer ul a {
@@ -78,25 +83,43 @@ footer ul a:hover {
     color: violet;
 }
 
-.project-list {
-    border: 2px solid green;
+#project-list {
+    /* border: 2px solid green; */
     align-items: center;
     text-align: center;
 }
-.project-list div {
-    border: 2px solid red;
+#project-list div {
+    /* border: 2px solid red; */
     display: flex;
+    flex-wrap: wrap;
+}
+
+#first-project-img {
+    margin: auto;
+    max-width: 300px;
+    flex: 2 0 300px;
 }
 
 .project-img {
-    max-width: 400px;
-    display:
+    max-width: 200px;
+    max-height: 200px;
+    flex: 1 0 200px;
 }
 
-.developer-info {
-    border: 2px solid black;
+#developer-info {
+    /* border: 2px solid black; */
+    width: 100%;
 }
 
 #profile-photo {
     max-width: 400px;
+    float: left;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul,
+    footer ul {
+        flex-direction: column;
+        line-height: 2rem;
+    }
 }
