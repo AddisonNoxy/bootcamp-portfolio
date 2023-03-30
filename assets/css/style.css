@@ -12,10 +12,6 @@ main {
     flex-wrap: wrap;
 }
 
-main section {
-
-}
-
 h1 {
     font-size: 48px;
     font-weight: bold;
@@ -30,11 +26,13 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
+    background-color: var(--lightgray);
 }
 
 p {
     color: white;
-    font-size: 16px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 nav ul {
@@ -74,6 +72,10 @@ footer ul {
     flex-direction: row;
 }
 
+section {
+    width: 100%;
+}
+
 footer ul a {
     text-decoration: none;
     color: white;
@@ -98,12 +100,33 @@ footer ul a:hover {
     margin: auto;
     max-width: 300px;
     flex: 2 0 300px;
+    opacity: .7;
+}
+
+#first-project-img:hover {
+    opacity: 1;
+}
+
+#portfolio-img {
+    max-width: 200px;
+    max-height: 200px;
+    flex: 1 0 200px;
+    opacity: .7;
+}
+
+#porfolio-img:hover {
+    opacity: 1;
 }
 
 .project-img {
     max-width: 200px;
     max-height: 200px;
     flex: 1 0 200px;
+    opacity: .7;
+}
+
+img:hover {
+    opacity: 1;
 }
 
 #developer-info {
@@ -121,5 +144,9 @@ footer ul a:hover {
     footer ul {
         flex-direction: column;
         line-height: 2rem;
+    }
+
+    p {
+        font-size: 16px;
     }
 }
